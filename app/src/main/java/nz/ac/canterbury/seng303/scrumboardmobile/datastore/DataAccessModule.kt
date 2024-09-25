@@ -8,22 +8,22 @@ import androidx.datastore.preferences.preferencesDataStore
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import kotlinx.coroutines.FlowPreview
-import nz.ac.canterbury.seng303.scrumboardmobile.models.Note
+import nz.ac.canterbury.seng303.scrumboardmobile.models.Story
 import nz.ac.canterbury.seng303.scrumboardmobile.viewmodels.NoteViewModel
 import org.koin.android.ext.koin.androidContext
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 
 
-private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "nz.ac.canterbury.seng303.lab1.shared.preferences")
+private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "nz.ac.canterbury.seng303.scrumboardmobile.shared.preferences")
 
 @FlowPreview
 val dataAccessModule = module {
-    single<Storage<Note>> {
+    single<Storage<Story>> {
         PersistentStorage(
             gson = get(),
-            type = object: TypeToken<List<Note>>(){}.type,
-            preferenceKey = stringPreferencesKey("notes"),
+            type = object: TypeToken<List<Story>>(){}.type,
+            preferenceKey = stringPreferencesKey("stories"),
             dataStore = androidContext().dataStore
         )
     }

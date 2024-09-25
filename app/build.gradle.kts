@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "nz.ac.canterbury.seng303.scrumboard-mobile"
+    namespace = "nz.ac.canterbury.seng303.scrumboardmobile"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "nz.ac.canterbury.seng303.scrumboard-mobile"
+        applicationId = "nz.ac.canterbury.seng303.scrumboardmobile"
         minSdk = 26
         targetSdk = 34
         versionCode = 1
