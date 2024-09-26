@@ -10,7 +10,7 @@ data class WorkLog(
     val description: String,
     val time: Long,
     val workingHours: Int,
-    val createdBy: Int
+    val createdBy: String
 )
 
 data class Story(
