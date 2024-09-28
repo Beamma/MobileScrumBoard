@@ -10,6 +10,7 @@ import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 import nz.ac.canterbury.seng303.scrumboardmobile.datastore.Storage
+import nz.ac.canterbury.seng303.scrumboardmobile.models.Status
 import nz.ac.canterbury.seng303.scrumboardmobile.models.Story
 import nz.ac.canterbury.seng303.scrumboardmobile.models.Task
 import kotlin.random.Random
@@ -53,7 +54,8 @@ class StoryViewModel(private val storyStorage: Storage<Story>): ViewModel() {
             title = title,
             description = description,
             timestamp = System.currentTimeMillis(),
-            taskList = tasks
+            taskList = tasks,
+            status = Status.TO_DO
         )
         storyStorage.insert(story).catch { Log.e("STORY_VIEW_MODEL", "Could not insert story") }
             .collect()
