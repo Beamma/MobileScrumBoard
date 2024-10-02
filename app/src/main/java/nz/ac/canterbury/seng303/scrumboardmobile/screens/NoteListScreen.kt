@@ -31,7 +31,7 @@ import androidx.navigation.NavController
 import nz.ac.canterbury.seng303.scrumboardmobile.models.Note
 import nz.ac.canterbury.seng303.scrumboardmobile.util.convertTimestampToReadableTime
 import nz.ac.canterbury.seng303.scrumboardmobile.viewmodels.NoteViewModel
-
+@Deprecated("Was used for Assignment 1")
 @Composable
 fun NoteList(navController: NavController, noteViewModel: NoteViewModel) {
     noteViewModel.getNotes()
@@ -43,7 +43,7 @@ fun NoteList(navController: NavController, noteViewModel: NoteViewModel) {
         }
     }
 }
-
+@Deprecated("Was used for Assignment 1")
 @Composable
 fun NoteItem(navController: NavController, note: Note, deleteFn: (id: Int) -> Unit) {
     val context = LocalContext.current

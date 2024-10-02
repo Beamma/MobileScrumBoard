@@ -28,6 +28,7 @@ import nz.ac.canterbury.seng303.scrumboardmobile.util.convertTimestampToReadable
 import nz.ac.canterbury.seng303.scrumboardmobile.viewmodels.EditNoteViewModel
 import nz.ac.canterbury.seng303.scrumboardmobile.viewmodels.NoteViewModel
 
+@Deprecated("Was used for Assignment 1")
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun EditNote(

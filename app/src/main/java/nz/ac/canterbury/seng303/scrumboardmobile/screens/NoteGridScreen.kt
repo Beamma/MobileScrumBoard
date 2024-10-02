@@ -31,7 +31,7 @@ import nz.ac.canterbury.seng303.scrumboardmobile.R
 import nz.ac.canterbury.seng303.scrumboardmobile.models.Note
 import nz.ac.canterbury.seng303.scrumboardmobile.util.convertTimestampToReadableTime
 import nz.ac.canterbury.seng303.scrumboardmobile.viewmodels.NoteViewModel
-
+@Deprecated("Was used for Assignment 1")
 @Composable
 fun NoteGrid(navController: NavController, noteViewModel: NoteViewModel) {
     noteViewModel.getNotes()
@@ -46,7 +46,7 @@ fun NoteGrid(navController: NavController, noteViewModel: NoteViewModel) {
         }
     }
 }
-
+@Deprecated("Was used for Assignment 1")
 @Composable
 fun NoteGridItem(navController: NavController, note: Note) {
     Box(

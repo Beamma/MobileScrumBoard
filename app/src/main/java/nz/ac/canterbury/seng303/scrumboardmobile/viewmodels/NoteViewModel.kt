@@ -12,7 +12,7 @@ import kotlinx.coroutines.launch
 import nz.ac.canterbury.seng303.scrumboardmobile.datastore.Storage
 import nz.ac.canterbury.seng303.scrumboardmobile.models.Note
 import kotlin.random.Random
-
+@Deprecated("Was used for Assignment 1")
 class NoteViewModel(
     private val noteStorage: Storage<Note>
 ) : ViewModel() {
