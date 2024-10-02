@@ -18,7 +18,7 @@ import androidx.compose.ui.unit.dp
 import nz.ac.canterbury.seng303.scrumboardmobile.models.Note
 import nz.ac.canterbury.seng303.scrumboardmobile.util.convertTimestampToReadableTime
 import nz.ac.canterbury.seng303.scrumboardmobile.viewmodels.NoteViewModel
-
+@Deprecated("Was used for Assignment 1")
 @Composable
 fun NoteCard(noteId: String, noteViewModel: NoteViewModel) {
     noteViewModel.getNoteById(noteId = noteId.toIntOrNull())

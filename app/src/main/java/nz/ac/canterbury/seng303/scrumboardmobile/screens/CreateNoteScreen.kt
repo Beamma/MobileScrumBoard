@@ -15,7 +15,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
-
+@Deprecated("Was used for Assignment 1")
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun CreateNote(

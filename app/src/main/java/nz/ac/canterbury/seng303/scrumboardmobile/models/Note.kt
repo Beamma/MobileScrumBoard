@@ -1,5 +1,6 @@
 package nz.ac.canterbury.seng303.scrumboardmobile.models
 
+@Deprecated("Was used for Assignment 1")
 class Note (
     val id: Int,
     val title: String,

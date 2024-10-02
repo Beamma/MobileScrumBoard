@@ -5,7 +5,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import nz.ac.canterbury.seng303.scrumboardmobile.models.Note
-
+@Deprecated("Was used for Assignment 1")
 class EditNoteViewModel: ViewModel() {
     var title by mutableStateOf("")
         private set
